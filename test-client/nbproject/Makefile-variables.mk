@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=GNU-Linux
 CND_ARTIFACT_DIR_Debug=dist/Debug/GNU-Linux
-CND_ARTIFACT_NAME_Debug=server
-CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-Linux/server
+CND_ARTIFACT_NAME_Debug=test-client
+CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-Linux/test-client
 CND_PACKAGE_DIR_Debug=dist/Debug/GNU-Linux/package
-CND_PACKAGE_NAME_Debug=server.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/GNU-Linux/package/server.tar
+CND_PACKAGE_NAME_Debug=test-client.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/GNU-Linux/package/test-client.tar
 # Release configuration
 CND_PLATFORM_Release=GNU-Linux
 CND_ARTIFACT_DIR_Release=dist/Release/GNU-Linux
-CND_ARTIFACT_NAME_Release=server
-CND_ARTIFACT_PATH_Release=dist/Release/GNU-Linux/server
+CND_ARTIFACT_NAME_Release=test-client
+CND_ARTIFACT_PATH_Release=dist/Release/GNU-Linux/test-client
 CND_PACKAGE_DIR_Release=dist/Release/GNU-Linux/package
-CND_PACKAGE_NAME_Release=server.tar
-CND_PACKAGE_PATH_Release=dist/Release/GNU-Linux/package/server.tar
+CND_PACKAGE_NAME_Release=test-client.tar
+CND_PACKAGE_PATH_Release=dist/Release/GNU-Linux/package/test-client.tar
 #
 # include compiler specific variables
 #

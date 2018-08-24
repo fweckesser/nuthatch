@@ -34,3 +34,9 @@
 /server/dist/
 /transaction-log/build/
 /transaction-log/dist/
+/asio-server/build/
+/asio-server/dist/
+/echo-server/build/
+/echo-server/dist/
+/test-client/build/
+/test-client/dist/

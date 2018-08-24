@@ -13,8 +13,6 @@
         <gdb_interceptlist>
           <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
         </gdb_interceptlist>
-        <gdb_signals>
-        </gdb_signals>
         <gdb_options>
           <DebugOptions>
           </DebugOptions>
@@ -27,13 +25,11 @@
       <runprofile version="9">
         <runcommandpicklist>
           <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
-          <runcommandpicklistitem>"${OUTPUT_PATH}" 127.0.0.1 8080</runcommandpicklistitem>
-          <runcommandpicklistitem>"${OUTPUT_PATH}"  8080</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" 8080</runcommandpicklistitem>
         </runcommandpicklist>
-        <runcommand>"${OUTPUT_PATH}"  8080</runcommand>
+        <runcommand>"${OUTPUT_PATH}" 8080</runcommand>
         <rundir></rundir>
         <buildfirst>true</buildfirst>
-        <console-type>2</console-type>
         <terminal-type>0</terminal-type>
         <remove-instrumentation>0</remove-instrumentation>
         <environment>

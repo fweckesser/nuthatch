@@ -35,10 +35,6 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/async_server.o \
-	${OBJECTDIR}/async_session.o \
-	${OBJECTDIR}/dispatch_queue.o \
-	${OBJECTDIR}/echo_client.o \
 	${OBJECTDIR}/echo_server.o
 
 
@@ -60,31 +56,11 @@ LDLIBSOPTIONS=
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
-	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/server
+	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/echo-server
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/server: ${OBJECTFILES}
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/echo-server: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
-	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/server ${OBJECTFILES} ${LDLIBSOPTIONS}
-
-${OBJECTDIR}/async_server.o: async_server.cpp 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/async_server.o async_server.cpp
-
-${OBJECTDIR}/async_session.o: async_session.cpp 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/async_session.o async_session.cpp
-
-${OBJECTDIR}/dispatch_queue.o: dispatch_queue.cpp 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/dispatch_queue.o dispatch_queue.cpp
-
-${OBJECTDIR}/echo_client.o: echo_client.cpp 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/echo_client.o echo_client.cpp
+	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/echo-server ${OBJECTFILES} ${LDLIBSOPTIONS}
 
 ${OBJECTDIR}/echo_server.o: echo_server.cpp 
 	${MKDIR} -p ${OBJECTDIR}
@@ -97,7 +73,7 @@ ${OBJECTDIR}/echo_server.o: echo_server.cpp
 # Clean Targets
 .clean-conf: ${CLEAN_SUBPROJECTS}
 	${RM} -r ${CND_BUILDDIR}/${CND_CONF}
-	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/server
+	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/echo-server
 
 # Subprojects
 .clean-subprojects:
